@@ -209,7 +209,6 @@ fn column_values<'a, 'b>(
                 SerialType::Text(_) => text_payload(serial_type.size())(i),
             }?;
             i = ii;
-            dbg!(v.clone());
             res.push(v);
         }
 
